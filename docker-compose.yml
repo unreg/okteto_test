@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+
+  pyrogram-service:
+
+    container_name: ssgv-pyrogram
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    command: python3 main.py
+
+    volumes:
+      - .:/src
